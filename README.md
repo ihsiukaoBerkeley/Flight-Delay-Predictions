@@ -6,6 +6,9 @@ Approximately 7-9k flights daily (25% of domestic flights annually) are delayed 
 
 Analysis of the NOAA GSOD (daily weather) and the DoT ATP (airline performance) datasets indicated that weather and visibility conditions impacted potential delays the most, while a logistic regression learning model indicated an average classification ability (via F-0.5 score) of ~55-60%. However, implementing a graph network confirmed our hypothesis of nonlinearities in the data, with a Multilayer Perceptron returning ~60-65% classification ability (via F-0.5 score) on average.
 
+### Pipeline
+![flight_pipeline](https://github.com/ihsiukaoBerkeley/Flight-Delay-Predictions/assets/117419224/cda2bbeb-eb6b-4512-900b-85deb7b54f56)
+
 ### Results and Discussion
 
 Final analysis of the normalized datasets indicated that the Logistic Regression (LR) and the Multilayer Perceptron (MLP) models performed the best out of all four architectures tested for this project. The LR model boasted an ~ 60% success rate with moderate overfitting, while the MLP model performed even better with an ~ 65% success rate, albeit with heavier overfitting. Meanwhile, the Decision Tree algorithm performed fairly well (~ 57%) but scaled less adequately time-wise than the LR and MLP models, and the XGBoost model was unscalable past 3 years of data.
